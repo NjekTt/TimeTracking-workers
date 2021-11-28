@@ -12,7 +12,6 @@
       </Dependencies>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <!-- <Resource Name="dc.irisbi.PKG"/> -->
       <Resource Name="teccod.PKG"/>
       <Resource Name="data.GBL"/>
       <Resource Name="*.DFI" />
