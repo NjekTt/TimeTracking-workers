@@ -7,10 +7,10 @@ ClassMethod CreateUsers() As %Status
 {
     Set sc = $$$OK
     // 
-    &sql(CREATE USER Bill IDENTIFY BY ChangeMe)
+    &sql(CREATE USER Admin IDENTIFY BY ChangeMe)
     If SQLCODE < 0 throw ##class(%Exception.SQL).CreateFromSQLCODE(SQLCODE,%msg)
 
-    &sql(CREATE USER John IDENTIFY BY ChangeMe)
+    &sql(CREATE USER Worker IDENTIFY BY ChangeMe)
     If SQLCODE < 0 throw ##class(%Exception.SQL).CreateFromSQLCODE(SQLCODE,%msg)
 
     Return sc
